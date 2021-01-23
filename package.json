@@ -30,6 +30,6 @@
   },
   "homepage": "https://github.com/11ty/eleventy-img-cloud#readme",
   "dependencies": {
-    "@11ty/eleventy-img": "^0.7.6"
+    "@11ty/eleventy-img": "^0.7.8"
   }
 }

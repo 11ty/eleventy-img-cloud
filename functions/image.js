@@ -30,6 +30,9 @@ exports.handler = async (event, context) => {
       // hardcoded 200px width for Demo purposes.
       widths: [200],
       dryRun: true,
+      cacheOptions: {
+        dryRun: true,
+      }
     });
 
     if(!metadata[format]) {
