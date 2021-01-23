@@ -21,6 +21,8 @@ exports.handler = async (event, context) => {
   }
   if(!width) {
     width = false;
+  } else {
+    width = parseInt(width, 10);
   }
 
   try {
