@@ -12,12 +12,15 @@ function isFullUrl(url) {
 
 // Based on https://github.com/DavidWells/netlify-functions-workshop/blob/master/lessons-code-complete/use-cases/13-returning-dynamic-images/functions/return-image.js
 exports.handler = async (event, context) => {
-  let { url, format } = event.queryStringParameters;
+  let { url, format, width } = event.queryStringParameters;
   let metadata;
   let source;
 
   if(!format) {
     format = "jpeg";
+  }
+  if(!width) {
+    width = false;
   }
 
   try {
@@ -27,8 +30,7 @@ exports.handler = async (event, context) => {
 
     metadata = await Image(url, {
       formats: [format],
-      // hardcoded 200px width for Demo purposes.
-      widths: [200],
+      widths: [width],
       dryRun: true,
       cacheOptions: {
         dryRun: true,
