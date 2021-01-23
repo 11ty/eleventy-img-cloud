@@ -1,4 +1,4 @@
-const Image = require("@11ty/eleventy-img");
+const EleventyImage = require("@11ty/eleventy-img");
 
 function isFullUrl(url) {
   try {
@@ -28,7 +28,7 @@ exports.handler = async (event, context) => {
       throw new Error(`Invalid \`url\`: ${url}`);
     }
 
-    metadata = await Image(url, {
+    metadata = await EleventyImage(url, {
       formats: [format],
       widths: [width],
       dryRun: true,
