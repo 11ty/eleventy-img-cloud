@@ -1,0 +1,35 @@
+{
+  "name": "eleventy-img-cloud",
+  "version": "1.0.0",
+  "description": "A serverless function implmentation of eleventy-img for runtime image transformations",
+  "main": "functions/image.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/11ty/eleventy-img-cloud.git"
+  },
+  "funding": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/11ty"
+  },
+  "keywords": [
+    "eleventy",
+    "eleventy-img",
+    "eleventy-cloud"
+  ],
+  "author": {
+    "name": "Zach Leatherman",
+    "email": "zachleatherman@gmail.com",
+    "url": "https://zachleat.com/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/11ty/eleventy-img-cloud/issues"
+  },
+  "homepage": "https://github.com/11ty/eleventy-img-cloud#readme",
+  "dependencies": {
+    "@11ty/eleventy-img": "^0.7.5"
+  }
+}
